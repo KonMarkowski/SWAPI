@@ -1,0 +1,86 @@
+html {
+  background-color: black;
+  background-image: url('https://cutewallpaper.org/21/star-wars-stars-wallpaper/Wallpaper-Star-Wars,-planet,-space,-minimalism,-stars-.png');
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+input {
+  background-color: #ddd;
+  width: 600px;
+  max-width: calc(100vw - 50px);
+  margin: 20px auto 20px auto;
+  font-family: "Jura", arial;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1rem;
+  resize: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+button{
+  background-color: rgb(148, 0, 0);
+  font-size: 1rem;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+  
+}
+button:hover {
+  background-color: rgb(94, 0, 0);
+  
+}
+
+.Header{
+  margin-top: 20px;
+}
+
+.App {
+  text-align: center;
+  font-family: "Jura", arial;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.Crawl {
+  font-family: "Droid Sans", arial;
+  color: yellow;
+  margin: auto 10px 50px 10px;
+}
+
+.SideInfo {
+  margin-top: 20px;
+  color: grey;
+}
+
+h6.SideInfo {
+  margin: 0;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.CharacterName {
+  display: block;
+  width: fit-content;
+  cursor: pointer;
+}
+
+h2 {
+  margin: 10px auto 10px auto;
+}
+
+h3 {
+  margin: 50px auto 0px auto;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: auto 10px 50px 10px;
+}

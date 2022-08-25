@@ -3,6 +3,7 @@ import { findCharacters } from "../api/find-characters";
 import { TFilmResult, TPerson } from "../types/types";
 import { RenderCharacterData } from "./render-characters-data";
 import { RenderMoviesData } from "./render-movies-data";
+import "../styles/search-interface.css";
 
 export type TMoviesData =
   | {
@@ -75,8 +76,8 @@ export const SearchInterface = () => {
   };
 
   return (
-    <div>
-      <h3>Find Star Wars characters</h3>
+    <div className="App">
+      <h3 className="Header">Find Star Wars characters</h3>
       <div>
         <input
           value={searchText}
@@ -88,17 +89,17 @@ export const SearchInterface = () => {
         use the force to find what you are looking for
       </button>
       {characters.type === "loading" && (
-        <h5>Loading...</h5>
+        <h5 className="SideInfo">Loading...</h5>
       )}
       {characters.type === "error" && (
-        <h5>{characters.errorMessage}</h5>
+        <h5 className="SideInfo">{characters.errorMessage}</h5>
       )}
       {characters.type === "loaded" && (
         <div>
-          <h4>
+          <h4 className="SideInfo">
             List of characters matching the given criteria:
           </h4>
-          <h6>
+          <h6 className="SideInfo">
             (click on a name to see a list of movies with a given character):
           </h6>
           {characters.characters.map((character, index) => (
@@ -111,10 +112,10 @@ export const SearchInterface = () => {
         </div>
       )}
       <div>
-        {movies.type === "loading" && <h5>Loading...</h5>}
+        {movies.type === "loading" && <h5 className="SideInfo">Loading...</h5>}
         {movies.type === "loaded" && (
           <div>
-            <h4>
+            <h4 className="SideInfo">
               List of movies with {movies.characterName}:
             </h4>
             {movies.movies.map((movie, index) => (

@@ -33,6 +33,7 @@ export const RenderCharacterData: React.FC<RenderCharactersDataProps> = ({
 
   return (
     <h2
+      className="CharacterName"
       onClick={() => handleFindMoviesByCharacter(character)}
     >
       {character.name}
